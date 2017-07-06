@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cashier.master.cs" Inherits="BankingApplication.CashierFolder.Cashier" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 70px;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table class="auto-style1" border="1">
+        <tr>
+            <td class="auto-style2">
+                <asp:Image ID="Image1" runat="server" Height="137px" ImageUrl="http://news.bbcimg.co.uk/media/images/69726000/jpg/_69726012_69726011.jpg" Width="246px" />
+            </td>
+            <td>
+                <h1 class="auto-style3">Cashier Home Page</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CashierFolder/CashierLogin.aspx">CashierLogin</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CashierFolder/CashierDashBoardPage.aspx">DashBoard</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/CashierFolder/CashierLogout.aspx">Logout</asp:HyperLink>
+            </td>
+            <td>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td>Copyrights Reserved &copy 2017</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="BankingApplication.CustomerFolder.Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 323px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    <table class="auto-style1" border="2">
+        <tr>
+            <td class="auto-style2">
+                <asp:Image ID="Image1" runat="server" Height="113px" ImageUrl="http://repoindustry.com/article-images/56/at-bank_sm.jpg.jpg" Width="176px" />
+            </td>
+            <td>
+                <h1>Customer Page</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CustomerFolder/CustomerLoginPage.aspx">Login</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CustomerFolder/CustomerRegistration.aspx">Customer Registration</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/CustomerFolder/FAQ.aspx">FAQ Page</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink4" runat="server">About Us</asp:HyperLink>
+            </td>
+            <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td>Copyrights Reserved &copy Reserved</td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
